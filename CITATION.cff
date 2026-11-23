@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use this research software, please cite this repository and the LoveDA dataset paper."
+title: "Class-wise Probability Rescue for Cross-Domain Remote Sensing Segmentation"
+type: software
+authors:
+  - family-names: Xue
+    given-names: Mengle
+    email: rsdyxjh558@gmail.com
+version: 0.1.0
+date-released: 2026-11-23
+license: MIT
+repository-code: "https://github.com/xy0125423/loveda-classwise-probability-rescue"

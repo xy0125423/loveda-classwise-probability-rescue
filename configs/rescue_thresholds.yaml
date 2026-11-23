@@ -1,0 +1,68 @@
+{
+  "quantile": 0.999,
+  "epsilon": 1e-08,
+  "branches": {
+    "water_ratio": {
+      "direction": "urban_to_rural",
+      "target": 3,
+      "scoring": "ratio",
+      "threshold": -0.47366780042648315,
+      "arithmetic": "float64_then_float32",
+      "role": "primary"
+    },
+    "water_probability": {
+      "direction": "urban_to_rural",
+      "target": 3,
+      "scoring": "probability",
+      "threshold": 0.17272954823076692,
+      "arithmetic": "float64_then_float32",
+      "role": "source ablation"
+    },
+    "building_probability": {
+      "direction": "rural_to_urban",
+      "target": 1,
+      "scoring": "probability",
+      "threshold": 0.22051838040351868,
+      "arithmetic": "float64_then_float32",
+      "role": "primary"
+    },
+    "building_ratio": {
+      "direction": "rural_to_urban",
+      "target": 1,
+      "scoring": "ratio",
+      "threshold": -0.1564700133800514,
+      "arithmetic": "float64_then_float32",
+      "role": "negative source control; no target evaluation"
+    }
+  },
+  "c4": {
+    "urban_to_rural": {
+      "support": 0.6,
+      "probability_gap": 0.05,
+      "global_threshold_bin": 1056,
+      "class_threshold_bins": [
+        1112,
+        914,
+        818,
+        1056,
+        1056,
+        1014,
+        1056
+      ]
+    },
+    "rural_to_urban": {
+      "support": 0.6,
+      "probability_gap": 0.05,
+      "global_threshold_bin": 1443,
+      "class_threshold_bins": [
+        1501,
+        1443,
+        1983,
+        1088,
+        1443,
+        1423,
+        797
+      ]
+    }
+  }
+}

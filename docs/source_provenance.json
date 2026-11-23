@@ -1,0 +1,87 @@
+[
+  {
+    "file": "src/loveda_rescue/model.py",
+    "release_sha256": "9030587191002fe4fc77571e5b45ed2cd63b5c763e9d228845fae9abffc4f753",
+    "sources": [
+      {
+        "path": "G1-03_正式基线准备/model.py",
+        "sha256": "c6b2654824d75ead6bf521e45772432a6118685cb62602248c58365797a222cd"
+      }
+    ],
+    "adaptation": "Copied historical implementation with module docstring."
+  },
+  {
+    "file": "src/loveda_rescue/training_data.py",
+    "release_sha256": "bb50725958fafce9e64e94c9210f0348e02a80b0f55c1b6109b304d13d04765e",
+    "sources": [
+      {
+        "path": "G1-03_正式基线准备/data.py",
+        "sha256": "71dca895f4c90c6349787d77f208ff3ce663ede4adce52df3b174ec207142c57"
+      }
+    ],
+    "adaptation": "Copied historical implementation with module docstring."
+  },
+  {
+    "file": "src/loveda_rescue/evaluation.py",
+    "release_sha256": "122b3ec95ec2721c2406dfbae29da67678a34aae720e1326aafae46520a65690",
+    "sources": [
+      {
+        "path": "G1-03_正式基线准备/metrics.py",
+        "sha256": "87c10c3cbeb8b5e173a37cc1707271d0e309e755355f331aadbc9c799dd74194"
+      }
+    ],
+    "adaptation": "Copied historical implementation with module docstring."
+  },
+  {
+    "file": "src/loveda_rescue/selection.py",
+    "release_sha256": "370864224d024aa8d2305ae4b4d8b58724cbd2dedb1360be99b499e3125037c3",
+    "sources": [
+      {
+        "path": "G1-03_正式基线准备/evaluate.py",
+        "sha256": "60dcdfaee99c16ebb3de6f02f05a79b2ab9fb114f092755a57745d645a8fc006"
+      }
+    ],
+    "adaptation": "Adapted imports for the package; numerical selection routine retained."
+  },
+  {
+    "file": "src/loveda_rescue/spatial.py",
+    "release_sha256": "548110491cec6a7bd81f820fd5b03e1fd2d80d09189f09c637f8408ccb917194",
+    "sources": [
+      {
+        "path": "G1-06_Urban_to_Rural独立目标域评价/frozen_calibration.py",
+        "sha256": "4a9762714d993d2a2f09f253ae841ba063078d8e726c30943ec2e62e35c73980"
+      }
+    ],
+    "adaptation": "Extracted features, score_bins and gate functions; added B2/C4 package wrapper."
+  },
+  {
+    "file": "src/loveda_rescue/training.py",
+    "release_sha256": "e14eb615bfb60de97a86da98547ea788d92d52908e54ad1fc2df6eee50cb674a",
+    "sources": [
+      {
+        "path": "G1-04_正式基线训练/formal_train.py",
+        "sha256": "a491e986e5c5fd344a6e8cb7ffa63bf446b7ccb940f5ce6470617944e8472138"
+      }
+    ],
+    "adaptation": "Extracted train_epoch and validate; adapted package imports."
+  },
+  {
+    "file": "src/loveda_rescue/rescue.py",
+    "release_sha256": "48c00ae0c8b8d00c34196f29e19d145101ef8215276548089346cbe80a23ae9e",
+    "sources": [
+      {
+        "path": "G1-09_失效机制整合与PBR试点/pbr_pilot.py",
+        "sha256": "ed8948d48d003680b1c15373586648708109bb1dc09d4519177af84ebe52ed9c"
+      },
+      {
+        "path": "G1-10_Water-only_PBR跨区域完整验证/07_代码与日志/task4_full_evaluation.py",
+        "sha256": "d1566afaa22fd1d1e537bf13b2060815c600bbc4f4531f30d9dc3a8fa7677ac6"
+      },
+      {
+        "path": "G1-11_Rural_to_Urban反向基线与机制验证/06_代码与日志/calibrate_source_r2u.py",
+        "sha256": "9689f2d6a9a23fdd257325e7380bc6196aefbbc4e3e16af2e4cef89a58099819"
+      }
+    ],
+    "adaptation": "Portable implementation of historical score, candidate, threshold and B/H/W rules; no experiment artifacts included."
+  }
+]

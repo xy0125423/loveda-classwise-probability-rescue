@@ -1,0 +1,3 @@
+direction,class_name,n_images,scoring,baseline_IoU_pct,rescue_IoU_pct,precision_pct,recall_pct,baseline_mIoU_pct,rescue_mIoU_pct,net_pixels
+Urban to Rural,Water,981,ratio,0,2.4441,95.3211,2.4471,15.8135,16.1818,2840590
+Rural to Urban,Building,677,probability,0,3.1684,83.9389,3.1878,26.1913,26.6607,2240851

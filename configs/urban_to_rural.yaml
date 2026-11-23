@@ -1,0 +1,62 @@
+{
+  "weights_enum": "ResNet18_Weights.IMAGENET1K_V1",
+  "weights_sha256_prefix": "f37072fd",
+  "normalization_mean": [
+    0.485,
+    0.456,
+    0.406
+  ],
+  "normalization_std": [
+    0.229,
+    0.224,
+    0.225
+  ],
+  "label_map": [
+    255,
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "num_classes": 7,
+  "ignore_index": 255,
+  "directions": {
+    "urban_to_rural": {
+      "source": "Urban",
+      "target": "Rural",
+      "seed": 20261114,
+      "split_seed": 20261124
+    },
+    "rural_to_urban": {
+      "source": "Rural",
+      "target": "Urban",
+      "seed": 20261115,
+      "split_seed": 20261125
+    }
+  },
+  "model_selection_fraction": 0.5,
+  "max_epochs": 20,
+  "early_stopping_patience": 5,
+  "early_stopping_min_delta": 0.0,
+  "selection_metric": "source_model_selection_mIoU",
+  "optimizer": "AdamW",
+  "learning_rate": 0.0001,
+  "weight_decay": 0.01,
+  "scheduler": "ReduceLROnPlateau(mode=max,factor=0.5,patience=2,threshold=0,threshold_mode=abs,min_lr=1e-6)",
+  "batch_size": 2,
+  "crop_size": 256,
+  "cpu_threads": 4,
+  "num_workers": 0,
+  "device": "cpu",
+  "evaluation_tile_size": 256,
+  "inference_batch_size": 2,
+  "log_every_batches": 50,
+  "memory_sample_interval_seconds": 0.2,
+  "effective_epochs": 20,
+  "seed": 20261114,
+  "direction": "urban_to_rural",
+  "expected_selected_epoch": 18
+}
